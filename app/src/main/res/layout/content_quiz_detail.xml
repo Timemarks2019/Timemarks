@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.QuizDetailActivity"
+    tools:showIn="@layout/activity_quiz_detail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:text="Title"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+                            <TextView
+                                android:id="@+id/tvSubject"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/raleway_regular"
+                                android:text="Subject"
+                                android:textSize="14dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="12dp"
+                                        android:layout_gravity="center"
+                                        android:foregroundGravity="center"
+                                        android:src="@drawable/ic_clock"
+                                        android:tint="@color/grayfm"
+                                        android:layout_height="12dp" />
+                                    <TextView
+                                        android:id="@+id/tvStartDate"
+                                        android:textSize="14dp"
+                                        android:text="10"
+                                        android:layout_marginLeft="5dp"
+                                        android:maxLines="1"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/raleway_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="12dp"
+                                        android:layout_gravity="center"
+                                        android:foregroundGravity="center"
+                                        android:src="@drawable/ic_clock"
+                                        android:tint="@color/grayfm"
+                                        android:layout_height="12dp" />
+                                    <TextView
+                                        android:id="@+id/tvEndDate"
+                                        android:textSize="14dp"
+                                        android:text="10"
+                                        android:layout_marginLeft="5dp"
+                                        android:maxLines="1"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/raleway_regular"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvMarks"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/raleway_regular"
+                                    android:textColor="@color/color_red_light"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:text="|"
+                                    android:textColor="@color/color_red_light"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/tvMinutes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/raleway_regular"
+                                    android:textColor="@color/color_red_light"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:minWidth="100dp"
+                                android:layout_marginTop="30dp"
+                                android:id="@+id/viewJoin"
+                                android:layout_gravity="right"
+                                android:orientation="vertical"
+                                android:padding="2dp">
+
+                                <TextView
+                                    android:id="@+id/tvAmount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="30/-"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/raleway_bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tvJoined"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/raleway_regular"
+                                android:text="10 Users Joined"
+                                android:textSize="12dp" />
+
+                            <!--<RelativeLayout
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                android:id="@+id/viewTimer11"
+                                android:background="@drawable/circle_blue">
+                                <TextView
+                                    android:id="@+id/tvStart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_above="@+id/tvTimer"
+                                    android:textColor="@color/red"
+                                    android:fontFamily="@font/raleway_regular"
+                                    android:text="Starts in"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:id="@+id/tvTimer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="2dp"
+                                    android:fontFamily="@font/raleway_regular"
+                                    android:text="00:00:00:00"
+                                    android:maxLines="1"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/red"
+                                    android:textSize="10dp" />
+
+                            </RelativeLayout>-->
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/viewBuy"
+                            android:orientation="horizontal">
+                            <RadioGroup
+                                android:id="@+id/radioPayment"
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content" >
+
+                                <RadioButton
+                                    android:id="@+id/radioPayNow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pay Online"
+                                    android:checked="true" />
+
+                                <RadioButton
+                                    android:id="@+id/radioWallet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="false"
+                                    android:text="Pay from Wallet" />
+
+                            </RadioGroup>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text=""
+                                android:id="@+id/tvMoney"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:id="@+id/btnScoreCard"
+                                android:paddingRight="20dp"
+                                android:paddingLeft="20dp"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:layout_marginRight="10dp"
+                                android:text="View Scorecard"
+                                android:layout_gravity="left"
+                                android:fontFamily="@font/open_sans_regular"
+                                android:background="@drawable/bg_price"/>
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:id="@+id/btnBuy"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:text="Buy"
+                                android:layout_gravity="right"
+                                android:fontFamily="@font/open_sans_regular"
+                                android:background="@drawable/bg_price"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/bg_left_round"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView1"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp"
+                    android:id="@+id/viewTimer"
+                    android:paddingBottom="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tvTimer"
+                        android:text="0:0:0"
+                        android:fontFamily="@font/lato_regular"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

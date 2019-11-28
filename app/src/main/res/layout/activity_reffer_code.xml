@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="230dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/image_reffer_earn"
+                        android:scaleType="centerInside"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="12dp"
+                        android:id="@+id/imgClose"
+                        android:src="@drawable/ic_close"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Refer us to your friends and get rewards."
+                        android:textSize="22dp"
+                        android:textColor="@color/md_black_1000"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Now you can share the invitation link with your friends and ask them to use your referral mobile number while registering.You will get Rs 10 after sucessfull registration of your referred user."
+                        android:textSize="16dp"
+                        android:textColor="@color/md_black_1000"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="18dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/viewCopyRefferCode"
+                        android:background="@color/md_blue_grey_100"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_height="50dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvRefferCode"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColor="@color/md_black_1000"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:text=""
+                            android:textSize="25dp"
+                            android:textAllCaps="true"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/blue"
+                            android:text="Copy Code"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content" />
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:id="@+id/progressBar"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Start Inviting Friends"
+                        android:layout_marginTop="40dp"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/viewWhatsApp"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:background="@drawable/img_bg_circular"
+                                android:layout_height="50dp">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:src="@drawable/ic_whatsapp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_height="30dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/viewFbMsnger"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:background="@drawable/img_bg_circular"
+                                android:layout_height="50dp">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:src="@drawable/ic_fb_msnger"
+                                    android:layout_centerVertical="true"
+                                    android:padding="4dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_height="30dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/viewSMS"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:background="@drawable/img_bg_circular"
+                                android:layout_height="50dp">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:src="@drawable/ic_msg"
+                                    android:padding="3dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_height="30dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/viewEmail"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:background="@drawable/img_bg_circular"
+                                android:layout_height="50dp">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:src="@drawable/ic_gmail"
+                                    android:padding="4dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_height="30dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/viewTwitter"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:background="@drawable/img_bg_circular"
+                                android:layout_height="50dp">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:src="@drawable/ic_twitter"
+                                    android:padding="4dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_height="30dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/viewFacebook"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:background="@drawable/img_bg_circular"
+                                android:layout_height="50dp">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:padding="4dp"
+                                    android:src="@drawable/ic_facebook"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_height="30dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/viewShare"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:background="@drawable/img_bg_circular"
+                                android:layout_height="50dp">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:padding="5dp"
+                                    android:src="@drawable/ic_share"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_height="30dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

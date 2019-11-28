@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_otp_verification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.OtpVerification">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentStart="true">
+
+
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:id="@+id/txt_pin_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            app:pinCharacterMask="*"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:pinTextBottomPadding="5dp"
+            app:pinLineStroke="2dp"
+            app:pinLineStrokeSelected="4dp"
+            app:pinBackgroundIsSquare="true"/>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/txt_pin_entry"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/txtStatement" />
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_pin_entry"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="@color/color_red_light"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvResendTimer" />
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/txtStatement"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textColor="@color/color_red_light"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/txtMessage" />
+    </RelativeLayout>
+</RelativeLayout>

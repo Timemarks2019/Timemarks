@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:visibility="visible">
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/viewLevel1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="6dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center|center_vertical"
+                                    android:fontFamily="@font/raleway_bold"
+                                    android:gravity="center_vertical"
+                                    android:textAlignment="center"
+                                    android:id="@+id/tvLevel1"
+                                    android:text="Level 1" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/viewLevel2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:visibility="visible"
+                            app:cardCornerRadius="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center|center_vertical"
+                                    android:fontFamily="@font/raleway_bold"
+                                    android:gravity="center_vertical"
+                                    android:textAlignment="center"
+                                    android:id="@+id/tvLevel2"
+                                    android:text="Level 2" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/viewLevel3"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:visibility="visible"
+                            app:cardCornerRadius="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center|center_vertical"
+                                    android:fontFamily="@font/raleway_bold"
+                                    android:gravity="center_vertical"
+                                    android:textAlignment="center"
+                                    android:id="@+id/tvLevel3"
+                                    android:text="Level 3" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/viewLevel4"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:visibility="visible"
+                            app:cardCornerRadius="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center|center_vertical"
+                                    android:fontFamily="@font/raleway_bold"
+                                    android:gravity="center_vertical"
+                                    android:textAlignment="center"
+                                    android:id="@+id/tvLevel4"
+                                    android:text="Level 4" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:fontFamily="@font/lato_regular"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvMsg" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/viewNoInternet"
+            android:clickable="true"
+            android:visibility="gone"
+            android:background="@color/offWhite"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imgNoInternet"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_no_internet" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNoIntenet"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_below="@+id/imgNoInternet"
+                    android:text="No Internet Connection"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnRetry"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_below="@+id/tvNoIntenet"
+                    android:background="@drawable/bg_primary_round"
+                    android:text="Retry"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/progressBar"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:indicatorColor="@color/colorAccent"
+            app:indicatorName="BallPulseIndicator"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

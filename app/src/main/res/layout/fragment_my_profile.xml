@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:paddingBottom="70dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_bg_color"
+                app:cardCornerRadius="4dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:id="@+id/viewProfile"
+                            android:layout_height="wrap_content">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/imgProfile"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/profile_image_dummy_nw" />
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:id="@+id/imgChooseImage"
+                                android:src="@drawable/ic_camera_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:visibility="gone"
+                                android:layout_height="25dp" />
+
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Name"
+                            android:maxLines="2"
+                            android:layout_marginRight="70dp"
+                            android:id="@+id/tvName"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/lato_regular"
+                            android:layout_marginLeft="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/viewProfile"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/viewEditProfile"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/ic_edit_profile"
+                                android:tint="@color/blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="Edit"
+                                android:textColor="@color/blue" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:src="@drawable/ic_basic_detail"
+                            android:tint="@color/color_btn_new_member"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="18dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Basic Details"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/lato_regular"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Registered Email ID"
+                            android:fontFamily="@font/lato_regular"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvEmail"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Registered Mobile Number"
+                            android:fontFamily="@font/lato_regular"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvMobile"
+                            android:fontFamily="@font/lato_regular"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:id="@+id/viewFullProfile"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:id="@+id/viewPrimaryMobile"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Primary Contact Number"
+                                android:fontFamily="@font/lato_regular"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/tvPrimaryMobile"
+                                android:fontFamily="@font/lato_regular"
+                                android:textColor="@color/black"
+                                android:text=""
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp"
+                            android:visibility="gone"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:id="@+id/viewDob"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Date of Birth"
+                                android:fontFamily="@font/lato_regular"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/tvDob"
+                                android:fontFamily="@font/lato_regular"
+                                android:textColor="@color/black"
+                                android:text=""
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical"
+                            android:id="@+id/viewArePinCode"
+                            android:paddingTop="5dp"
+                            android:visibility="gone"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Area Pin Code"
+                                android:fontFamily="@font/lato_regular"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/tvPinCode"
+                                android:fontFamily="@font/lato_regular"
+                                android:textColor="@color/black"
+                                android:text=""
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/viewShowHideProfile"
+                        android:layout_gravity="right"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvShowHideProfile"
+                            android:fontFamily="@font/lato_regular"
+                            android:visibility="gone"
+                            android:text="Show Full Profile"
+                            android:textColor="@color/blue" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Change Password"
+                    android:textSize="13dp"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_round_corner_button"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:padding="8dp"
+                    android:id="@+id/btnChangePassword"/>
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="1dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:text="Logout"
+                    android:textSize="13dp"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_round_corner_button"
+                    android:textColor="@color/blue"
+                    android:padding="8dp"
+                    android:id="@+id/btnLogout"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

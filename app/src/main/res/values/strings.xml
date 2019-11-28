@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Time Marks</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_change_password">Change Password</string>
+    <string name="title_activity_forgot_password">Forgot Password</string>
+    <string name="title_activity_change_password_with_otp">Change Password</string>
+    <string name="title_activity_quiz_summary">Scorecard</string>
+    <string name="title_activity_quiz_comparision">Quiz</string>
+    <string name="title_activity_quiz_chapters">ActivityQuizChapters</string>
+    <string name="title_activity_quiz_attempt">Quiz</string>
+    <string name="title_activity_subject">SubjectActivity</string>
+    <string name="txt_privacy_policy">By continuing, you agree to our\'s <a href="http://www.google.com">Terms of Service</a>. We will manage information about as described in our <a href="http://www.google.com">Privacy Policy</a> and <a href="http://www.google.com">Cookie Policy</a>.</string>
+    <string name="title_activity_register">Sign Up</string>
+    <string name="title_activity_quiz_detail">Quiz Detail</string>
+    <string name="share_text">Hey.I found an amazing App on play store. Here You Can Download it </string>
+    <string name="text_share_msg"></string>
+    <string name="title_activity_leader_board">Leader Board</string>
+    <string name="facebook_app_id">454590808528999</string>
+    <string name="fb_login_protocol_scheme">fb454590808528999</string>
+    <string name="google_api_key">AIzaSyB-5KTVdS6Vperz1ZIRwSuD53i5RnEWyM0</string>
+    <string name="title_activity_my_profile">My Profile</string>
+    <string name="title_activity_quiz_questions">Quiz Questions</string>
+</resources>
